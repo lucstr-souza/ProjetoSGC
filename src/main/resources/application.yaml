@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sgc-backend
+
+  datasource: 
+    url: jdbc:mysql://localhost:3306/sgc_db?useSSL=false&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true
+    username: root
+    password: luisa123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
+    
